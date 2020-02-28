@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		142087652408B790001526D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142087642408B790001526D7 /* AppDelegate.swift */; };
 		142087672408B790001526D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142087662408B790001526D7 /* SceneDelegate.swift */; };
-		142087692408B790001526D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142087682408B790001526D7 /* ViewController.swift */; };
+		142087692408B790001526D7 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142087682408B790001526D7 /* ImageViewController.swift */; };
 		1420876C2408B790001526D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420876A2408B790001526D7 /* Main.storyboard */; };
 		1420876E2408B791001526D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1420876D2408B791001526D7 /* Assets.xcassets */; };
 		142087712408B791001526D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1420876F2408B791001526D7 /* LaunchScreen.storyboard */; };
+		142087792408B82C001526D7 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142087782408B82C001526D7 /* MainCollectionViewController.swift */; };
+		1420877B2408BA97001526D7 /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420877A2408BA97001526D7 /* UserActionCell.swift */; };
+		1420877D2408BADE001526D7 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420877C2408BADE001526D7 /* CourseCell.swift */; };
+		1420877F2408BB31001526D7 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420877E2408BB31001526D7 /* CoursesViewController.swift */; };
+		142087812408D0EE001526D7 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142087802408D0EE001526D7 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		142087612408B790001526D7 /* NetworkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142087642408B790001526D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		142087662408B790001526D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		142087682408B790001526D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		142087682408B790001526D7 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		1420876B2408B790001526D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1420876D2408B791001526D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142087702408B791001526D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142087722408B791001526D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142087782408B82C001526D7 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		1420877A2408BA97001526D7 /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		1420877C2408BADE001526D7 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		1420877E2408BB31001526D7 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		142087802408D0EE001526D7 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,14 @@
 			children = (
 				142087642408B790001526D7 /* AppDelegate.swift */,
 				142087662408B790001526D7 /* SceneDelegate.swift */,
-				142087682408B790001526D7 /* ViewController.swift */,
-				1420876A2408B790001526D7 /* Main.storyboard */,
+				142087682408B790001526D7 /* ImageViewController.swift */,
+				1420877A2408BA97001526D7 /* UserActionCell.swift */,
+				142087802408D0EE001526D7 /* Course.swift */,
+				1420877C2408BADE001526D7 /* CourseCell.swift */,
+				142087782408B82C001526D7 /* MainCollectionViewController.swift */,
+				1420877E2408BB31001526D7 /* CoursesViewController.swift */,
 				1420876D2408B791001526D7 /* Assets.xcassets */,
+				1420876A2408B790001526D7 /* Main.storyboard */,
 				1420876F2408B791001526D7 /* LaunchScreen.storyboard */,
 				142087722408B791001526D7 /* Info.plist */,
 			);
@@ -138,7 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142087692408B790001526D7 /* ViewController.swift in Sources */,
+				142087812408D0EE001526D7 /* Course.swift in Sources */,
+				1420877D2408BADE001526D7 /* CourseCell.swift in Sources */,
+				1420877F2408BB31001526D7 /* CoursesViewController.swift in Sources */,
+				1420877B2408BA97001526D7 /* UserActionCell.swift in Sources */,
+				142087692408B790001526D7 /* ImageViewController.swift in Sources */,
+				142087792408B82C001526D7 /* MainCollectionViewController.swift in Sources */,
 				142087652408B790001526D7 /* AppDelegate.swift in Sources */,
 				142087672408B790001526D7 /* SceneDelegate.swift in Sources */,
 			);
