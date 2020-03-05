@@ -66,6 +66,8 @@
                         <segue destination="oGb-xw-FxD" kind="show" identifier="ExampleThree" id="iro-Fc-kSi"/>
                         <segue destination="oGb-xw-FxD" kind="show" identifier="ExampleFour" id="Igk-vi-t7a"/>
                         <segue destination="oGb-xw-FxD" kind="show" identifier="OurCourses" id="urd-Ye-d7d"/>
+                        <segue destination="oGb-xw-FxD" kind="show" identifier="PostRequest" id="AgD-EL-NeF"/>
+                        <segue destination="oGb-xw-FxD" kind="show" identifier="AlamofireGet" id="h1x-Ei-VPW"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRB-bX-oZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -202,6 +204,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="urd-Ye-d7d"/>
+        <segue reference="h1x-Ei-VPW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,14 +18,14 @@ class CourseCell: UITableViewCell {
     func configure(with course: Course) {
         
         nameLabel.text = course.name
-        lessonLabel.text = "Number of lessons: \(course.number_of_lessons ?? 0)"
-        testLabel.text = "Number of tests: \(course.number_of_tests ?? 0)"
+        lessonLabel.text = "Number of lessons: \(course.numberOfLessons ?? "0")"
+        testLabel.text = "Number of tests: \(course.numberOfTests ?? "0")"
         
         DispatchQueue.global().async {
             guard let stringURL = course.imageUrl else {return}
             guard let url = URL(string: stringURL) else {return}
             guard let imageData = try? Data(contentsOf: url) else {return}
-            
+            print(imageData)
             DispatchQueue.main.async {
                 self.courseImage.image = UIImage(data: imageData)
             }

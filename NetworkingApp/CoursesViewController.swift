@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-
+import Alamofire
 
 class CoursesViewController: UITableViewController {
     
@@ -124,8 +123,10 @@ extension CoursesViewController {
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
-            let decoder = JSONDecoder()
+            
             do {
+                let decoder = JSONDecoder()
+                //decoder.keyDecodingStrategy = .convertFromSnakeCase
                 self.courses = try decoder.decode([Course].self, from: data)
                 
                 DispatchQueue.main.async {
@@ -137,6 +138,44 @@ extension CoursesViewController {
             }
         }.resume()
     }
+
+    func postRequest() {
+        
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else {return}
+        
+        let course = ["name" : "Networking", "numberOfLessons": "10"]
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        //правило добавления записи на сервер
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        guard let httpBody = try? JSONSerialization.data(withJSONObject: course, options: []) else {return}
+        // если использовать try. то надо оборачивать в блок do catch
+        
+        request.httpBody = httpBody
+        
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {print(error); return }
+            guard let response = response, let data = data else {return}
+            print(response)
+            
+            do {
+                let course = try JSONSerialization.jsonObject(with: data, options: [])
+                print(course)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }.resume()
+        
+        
+    }
+    
+    func fetchDataWithAlamofire() {
+        // request(jsonUrlFour)
+    
+        
+    }
+    
     
     
 }

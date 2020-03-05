@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 //протокол CaseIterable позволяет из элементов перечисления создать массив
 enum UserAction: String, CaseIterable {
@@ -16,6 +17,8 @@ enum UserAction: String, CaseIterable {
     case exampleThree = "Example Three"
     case exampleFour = "Example Four"
     case ourCourses = "Our Courses"
+    case postRequest = "POST Request"
+    case alamofireGet = "Alamofire Get"
 }
 
 class MainCollectionViewController: UICollectionViewController {
@@ -54,6 +57,10 @@ class MainCollectionViewController: UICollectionViewController {
             performSegue(withIdentifier: "ExampleFour", sender: nil)
         case .ourCourses:
             performSegue(withIdentifier: "OurCourses", sender: nil)
+        case .postRequest:
+            performSegue(withIdentifier: "PostRequest", sender: nil)
+        case .alamofireGet:
+            performSegue(withIdentifier: "AlamofireGet", sender: nil)
         }
         
     }
@@ -76,6 +83,10 @@ class MainCollectionViewController: UICollectionViewController {
                 coursesVC.fetchDataV4()
             case "OurCourses":
                 coursesVC.fetchCourses()
+            case "PostRequest":
+                coursesVC.postRequest()
+            case "AlamofireGet":
+                coursesVC.fetchDataWithAlamofire()
             default: break
             }
         }
